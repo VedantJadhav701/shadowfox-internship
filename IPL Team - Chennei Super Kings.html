@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Team - Chennai Super Kings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #fcffc8;
+            padding: 20px;
+        }
+
+        /* Header */
+        .main-header {
+            background-color: #fff86c;
+            color: #1e1e00;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .main-header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .main-header h1:hover {
+            transform: scale(1.05);
+            color: #000;
+        }
+
+        .main-header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .main-header nav ul li {
+            margin: 0 15px;
+        }
+
+        .main-header nav ul li a {
+            color: #000;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .main-header nav ul li a:hover {
+            text-decoration: underline;
+            color: #555;
+        }
+
+        /* Sections */
+        .section {
+            margin: 50px 0;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #000;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .section h2:hover {
+            color: #555;
+            transform: scale(1.05);
+        }
+
+        .section p {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        /* Match Schedule */
+        .match-schedule {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .match-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .match-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .match-info {
+            text-align: center;
+        }
+
+        .match-info h3 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .match-info h3:hover {
+            color: #555;
+        }
+
+        .match-info p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Player Grid */
+        .player-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .player-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .player-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .player-card img {
+            max-width: 100%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .player-card img:hover {
+            transform: scale(1.1);
+        }
+
+        .player-card h4 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .player-card h4:hover {
+            color: #555;
+        }
+
+        .player-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Footer */
+        .main-footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffe600;
+            color: rgb(0, 0, 0);
+            margin-top: 50px;
+        }
+
+        .main-footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>
+            <img src="./IPL Team - Chennei Super Kings_files/Chennai_Super_Kings_Logo.svg.png" alt="CSK" style="width: 50px; vertical-align: middle; margin-right: 10px;">
+            Chennai Super Kings
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#schedule">Match Schedule</a></li>
+                <li><a href="#players">Player Profiles</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#fans">Fan Zone</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="schedule" class="section">
+        <h2>Match Schedule</h2>
+        <div class="match-schedule">
+            <div class="match-card">
+                <div class="match-info">
+                    <h3>CSK vs MI</h3>
+                    <p><strong>Date:</strong> 15th April 2024</p>
+                    <p><strong>Venue:</strong> Wankhede Stadium, Mumbai</p>
+                </div>
+            </div>
+
+            <div class="match-card">
+                <div class="match-info">
+                    <h3>CSK vs RCB</h3>
+                    <p><strong>Date:</strong> 20th April 2024</p>
+                    <p><strong>Venue:</strong> MA Chidambaram Stadium, Chennai</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="players" class="section">
+        <h2>Player Profiles</h2>
+
+        <h3>Batsmen</h3>
+        <div class="player-grid">
+            <div class="player-card">
+                <img src="./IPL Team - Chennei Super Kings_files/57.webp" alt="MS Dhoni">
+                <h4>MS Dhoni</h4>
+                <p>Position: Batsman</p>
+                <p>MS Dhoni - Biography</p>
+                <p>Full Name: Mahendra Singh Dhoni</p>
+                <p>Born: July 7, 1981 (Ranchi, Jharkhand, India)</p>
+                <p>Role: Wicketkeeper-Batsman</p>
+                <p>Batting Style: Right-hand batsman</p>
+                <p>Bowling Style: Right-arm medium</p>
+                <p>Teams: India, Chennai Super Kings (CSK), Rising Pune Supergiant, Jharkhand</p>
+            </div>
+
+            <div class="player-card">
+                <img src="./IPL Team - Chennei Super Kings_files/102.webp" alt="Ruturaj Gaikwad">
+                <h4>Ruturaj Gaikwad</h4>
+                <p>Position: Batsman</p>
+                <p>Ruturaj Gaikwad - Biography</p>
+                <p>Full Name: Ruturaj Dashrat Gaikwad</p>
+                <p>Born: January 31, 1997 (Pune, Maharashtra, India)</p>
+                <p>Role: Opening Batsman</p>
+                <p>Batting Style: Right-hand batsman</p>
+                <p>Bowling Style: Right-arm off-break</p>
+                <p>Teams: India, Chennai Super Kings (CSK), Maharashtra (domestic cricket), India A</p>
+            </div>
+        </div>
+
+        <h3>Bowlers</h3>
+        <div class="player-grid">
+            <div class="player-card">
+                <img src="./IPL Team - Chennei Super Kings_files/46.webp" alt="Ravindra Jadeja">
+                <h4>Ravindra Jadeja</h4>
+                <p>Position: Bowler</p>
+                <p>Ravindra Jadeja - Biography</p>
+                <p>Full Name: Ravindrasinh Anirudhsinh Jadeja</p>
+                <p>Born: December 6, 1988 (Jamnagar, Gujarat, India)</p>
+                <p>Role: All-rounder</p>
+                <p>Batting Style: Left-hand batsman</p>
+                <p>Bowling Style: Left-arm orthodox spin</p>
+                <p>Teams: India, Chennai Super Kings (CSK), Gujarat Lions, Rajasthan Royals</p>
+            </div>
+
+            <div class="player-card">
+                <img src="./IPL Team - Chennei Super Kings_files/91.webp" alt="Deepak Chahar">
+                <h4>Deepak Chahar</h4>
+                <p>Position: Bowler</p>
+                <p>Deepak Chahar - Biography</p>
+                <p>Full Name: Deepak Lokendrasingh Chahar</p>
+                <p>Born: August 7, 1992 (Agra, Uttar Pradesh, India)</p>
+                <p>Role: Bowler</p>
+                <p>Batting Style: Right-hand batsman</p>
+                <p>Bowling Style: Right-arm medium-fast</p>
+                <p>Teams: India, Chennai Super Kings (CSK), Rajasthan Royals, Rajasthan (domestic cricket)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="section">
+        <h2>Latest News</h2>
+        <div class="news-details">
+            <p>As of early September 2024, Chennai Super Kings (CSK) has been preparing for the upcoming IPL season with key players arriving in Chennai for their pre-season camp. The team's preparations began with the arrival of notable players like Deepak Chahar, Simarjeet Singh, Rajvardhan Hangargekar, and Mukesh Choudhary. However, CSK captain MS Dhoni's arrival has yet to be confirmed​ (<em>Telegraph India</em>).</p>
+            
+            <p>Financially, CSK has also seen tremendous growth. Their net profit surged by 340% in FY24, reaching ₹229 crore. This growth has been attributed to increased revenue from ticket sales and BCCI's central rights​ (<em>India Today</em>).</p>
+            
+            <p>Additionally, CSK is expanding its cricket academies, focusing on nurturing young talent. Their academy, Super Kings Academy, has over 1,100 students, with several players representing Tamil Nadu in various age groups​ (<em>India Today</em>, <em>Wikipedia</em>).</p>
+        </div>
+    </section>
+    
+
+    <section id="fans" class="section">
+        <h2>Fan Zone</h2>
+        <p>Engage with our team!</p>
+        <p>Fan Zone - Engage with the Super Kings!
+            Polls & Fan Voting
+            Vote Now!
+            Who do you think will be the MVP of the next match?
+            
+            <p>Ravindra Jadeja</p>
+            <p>Ruturaj Gaikwad</p>
+           <p> Deepak Chahar</p>
+            <p>MS Dhoni</p>
+            <p>🗳️ Cast your vote and see real-time results!</p>
+            
+           <p> Fan of the Month</p>
+            <p>🌟 Meet our Fan of the Month 🌟</p>
+            <p>Name: Vedant Jadhav</p>
+            <p>From: Chennai</p>
+            <p>Favorite Player: MS Dhoni</p>
+            <p>Why I love CSK: "The energy, passion, and 'Whistle Podu' spirit! CSK is not just a team; it's an emotion."</p>
+            
+            <p>Want to be featured? Send us your CSK moments, and you could be next!</p>
+            
+           <p> Exclusive Content</p>
+            <p>🎥 Behind the Scenes: Watch CSK players in action as they gear up for the next big match. Catch exclusive training sessions, locker room talks, and never-before-seen footage of your favorite players!</p>
+            
+           <p> 🗣️ Player Interviews: Hear directly from MS Dhoni and the team on their journey to the next IPL trophy!</p>
+            
+            <p>Social Media Wall</p>
+            <p>Use #WhistlePodu on Instagram or Twitter and get featured right here!</p>
+            <p> what fellow fans are saying:</p>
+            
+            <p>@fan1: "CSK for life! #WhistlePodu 💛💛"</p>
+            <p>@fan2: "Ruturaj is on fire this season! 💥 #YellowArmy"</p>
+            <p>@fan3: "We are coming back stronger next match! 💪 #CSK"</p>
+            <p>Trivia & Quizzes</p>
+            <p>🧠 CSK Trivia Challenge:</p>
+            <p>Think you're the ultimate CSK fan? Test your knowledge!</p>
+            
+           <p> Q1: Who hit the winning six in CSK’s 2018 IPL final?</p>
+           <p> Q2: How many times has CSK qualified for the IPL playoffs?</p>
+            <p>🏅 Score 100% and unlock exclusive wallpapers!</p>
+            
+            <p>Contests & Giveaways</p>
+            <p>🎁 Win Exclusive CSK Merchandise!</p>
+            <p>Enter our weekly giveaway for a chance to win signed jerseys, caps, and more!</p>
+            <p>👉 Click here to enter and stand a chance to meet the team!</p>
+            
+            <p>Join the Whistle Podu Army!</p>
+            <p>Become a part of CSK's official fan club!</p>
+            
+           <p> Get early access to tickets.</p>
+            <p>Receive exclusive fan merchandise.</p>
+            <p>Participate in virtual meetups with the players.</p>
+            <p>📢 Join Now and become a true Super Kings insider!</p>
+           <p> Fantasy League</p>
+            <p>Think you can pick the perfect team?</p>
+            <p>Join our CSK Fantasy League, create your dream team, and compete with fans worldwide! Keep track of points and win weekly prizes!</p>
+            
+            <p>Buy Tickets & Merchandise</p>
+            <p>🎟️ Get your tickets for the next CSK match now!</p>
+            <p>Browse through our official merchandise and grab your favorite CSK jerseys, caps, and more!</p>
+    </section>
+    <footer class="main-footer">
+        <p>© 2024 Chennai Super Kings. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
